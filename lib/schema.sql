@@ -6,3 +6,6 @@ CREATE TABLE characters (id INTEGER PRIMARY KEY, name TEXT, motto TEXT, species 
 CREATE TABLE character_books (id INTEGER PRIMARY KEY, book_id INTEGER, character_id INTEGER);
 
 
+-- def select_character_names_and_number_of_books_they_are_in
+--   "SELECT characters.name, COUNT(books.id) FROM characters JOIN character_books ON characters.id = character_id"
+-- end
