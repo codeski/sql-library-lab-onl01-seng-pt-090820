@@ -6,7 +6,6 @@ CREATE TABLE characters (id INTEGER PRIMARY KEY, name TEXT, motto TEXT, species 
 CREATE TABLE character_books (id INTEGER PRIMARY KEY, book_id INTEGER, character_id INTEGER);
 
 
-
-
+SELECT author.name, subgenres.name FROM authors JOIN subgenres ON authors.id = author_id AND subgenre_id;
 
 -- 
