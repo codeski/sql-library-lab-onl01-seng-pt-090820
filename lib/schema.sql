@@ -6,4 +6,3 @@ CREATE TABLE characters (id INTEGER PRIMARY KEY, name TEXT, motto TEXT, species 
 CREATE TABLE character_books (id INTEGER PRIMARY KEY, book_id INTEGER, character_id INTEGER);
 
 
-SELECT series.title FROM series JOIN characters ON author_id = author_id ORDER BY COUNT(species = 'human')
