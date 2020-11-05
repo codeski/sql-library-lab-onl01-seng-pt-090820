@@ -7,5 +7,5 @@ CREATE TABLE character_books (id INTEGER PRIMARY KEY, book_id INTEGER, character
 
 
 -- def select_character_names_and_number_of_books_they_are_in
---   "SELECT characters.name, COUNT(books.id) FROM characters JOIN character_books ON characters.id = character_id"
+--   "SELECT characters.name, COUNT(book_id) FROM characters JOIN character_books ON characters.id = character_id GROUP BY character_id ORDER BY COUNT(book_id);"
 -- end
