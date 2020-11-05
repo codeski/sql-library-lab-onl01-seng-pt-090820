@@ -22,3 +22,8 @@ end
 def select_character_names_and_number_of_books_they_are_in
   "Write your SQL query here"
 end
+
+
+# select top 1 CR
+# from table t
+# order by len(CR) desc
